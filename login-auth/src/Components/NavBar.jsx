@@ -1,11 +1,22 @@
-import React from 'react'
-import './style.css'
+import React from "react";
+import "./style.css";
 
 function NavBar() {
   return (
     <nav class="navbar navbar-dark bg-dark">
-    <h3 className='main'> Artist</h3>
-  </nav>
-  )
+
+      <div className="main">
+        <h3>Cyber Security </h3>
+      </div>
+
+      <div className="pages">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <button className="btn">Login</button>
+        </ul>
+      </div>
+    </nav>
+  );
 }
-export default NavBar
+export default NavBar;
