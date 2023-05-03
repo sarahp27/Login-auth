@@ -22,8 +22,8 @@
 
 .banner{
     background-image: url('https://wallpaperaccess.com/full/4893666.jpg');
-    opacity: 90%;
-    height:600px;
+    opacity: 85%;
+    height:480px;
     width: 100%;
 }
 .head{
@@ -36,4 +36,13 @@
 .para {
     color: white;
     align-content:space-between;
+}
+
+.info{
+    align-content: right;
+    margin-top: 30px;
+}
+
+.info ul li{
+    list-style: none;
 }
