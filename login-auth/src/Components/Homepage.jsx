@@ -1,11 +1,10 @@
 import React from "react";
-import NavBar from "./NavBar";
 import "./style.css";
 
 function Homepage() {
   return (
     <>
-      <NavBar />
+ 
 
       <div className="banner">
         <h1 className="head"> Cyber Security </h1>

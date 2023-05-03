@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import './style.css'
 import styles from '../modules/login.module.css'
 import user from '../utils/user.info.json'
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
+  const navigate = useNavigate()
 
   const emailInput = (e) => {
     setEmail(e.target.value)
@@ -23,6 +25,7 @@ function Login() {
     if(user.email === email && user.password === pass){
       console.log("loged in")
       localStorage.setItem("user", JSON.stringify(user))
+      navigate("/home")
     }
   }
 
