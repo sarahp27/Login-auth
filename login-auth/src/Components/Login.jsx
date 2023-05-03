@@ -27,10 +27,13 @@ function Login() {
       localStorage.setItem("user", JSON.stringify(user))
       navigate("/home")
     }
+    else{
+      alert("Username and password is incorrect")
+    }
   }
 
   return (
-    <div className="container">
+    <div className={`container ${styles.container}`}>
       <form onSubmit={(e) => submit(e)}>
       <div class={`mb-3 ${styles.fields}`}>
         <label for="exampleInputEmail1" class="form-label">Email address</label>

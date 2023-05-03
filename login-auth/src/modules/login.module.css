@@ -1,3 +1,9 @@
  .fields{
 width: 400px;
 } 
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
