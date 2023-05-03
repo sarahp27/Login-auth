@@ -1,4 +1,4 @@
-import '../Components/About.css';
+import '../components/About.css';
 import React from 'react';
 function About() {
   return (
