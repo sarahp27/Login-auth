@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="App">
       <Homepage/>
+      <center>
       <Login />
+      </center>
 
     </div>
   );
