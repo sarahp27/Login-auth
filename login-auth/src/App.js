@@ -3,7 +3,7 @@ import Homepage from "./Components/Homepage";
 import Login from "./Components/Login";
 import NavBar from './Components/NavBar'
 import About from '../src/Components/About'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">

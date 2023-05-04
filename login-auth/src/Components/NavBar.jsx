@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function NavBar() {
 
@@ -24,8 +24,8 @@ function NavBar() {
 
       <div className="pages">
         <ul>
-          <li>Home</li>
-          <li>About</li>
+          <Link to={localStorage.getItem("user") ? "/home" : ""}><li>Home</li></Link>
+          <Link to={localStorage.getItem("user") ? "/about" : ""}><li>About</li></Link>
           <button className="btn" onClick={() => !localStorage.getItem("user") ? login() : logout()}>{localStorage.getItem("user")  ? "Logout" : ""}</button>
         </ul>
       </div>
