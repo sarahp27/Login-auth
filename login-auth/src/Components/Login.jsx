@@ -34,6 +34,8 @@ function Login() {
 
   return (
     <div className={`container ${styles.container}`}>
+      <div className="sub-container">
+        <h1>Login Form</h1>
       <form onSubmit={(e) => submit(e)}>
       <div class={`mb-3 ${styles.fields}`}>
         <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -46,6 +48,7 @@ function Login() {
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+    </div>
     </div>
   );
 }
