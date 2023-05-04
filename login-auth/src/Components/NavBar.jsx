@@ -31,5 +31,6 @@ function NavBar() {
       </div>
     </nav>
   );
+  // check
 }
 export default NavBar;
